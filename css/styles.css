@@ -498,7 +498,7 @@ a {
   }
 }
 
-/* Hero móvil */
+/* Hero y nav móvil */
 
 @media screen and (max-width: 430px) {
   .container-hero {
@@ -611,6 +611,33 @@ a {
       width: 90%;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
+
+/* Hero y nav teblat */
+
+@media screen and (min-width: 431px) and (max-width: 1366px) {
+  .container-hero {
+    .hero {
+      width: 90%;
+      flex-direction: column;
+
+      .container-datos-hero {
+        .container-meta {
+          top: -40px;
+          left: 750px;
+        }
+
+        .container-cifrado {
+          top: 450px;
+          left: -25px;
+        }
+      }
+    }
+
+    .container-grid-datos {
+      width: 90%;
     }
   }
 }
