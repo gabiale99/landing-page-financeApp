@@ -365,6 +365,7 @@ a {
             color: var(--background-secondary);
             padding: 0.2rem 0.3rem;
             opacity: 0;
+            border-radius: 5px;
             transition: 0.3s ease-in-out;
 
             p {
