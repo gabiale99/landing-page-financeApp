@@ -525,17 +525,20 @@ a {
         opacity: 1;
         max-height: 500px;
         transform: translateY(0px);
-        transition: 0.3s ease;
         padding: 1rem 0;
+        transition: 0.3s ease;
 
         ul {
           flex-direction: column;
           align-items: self-start;
           gap: 1rem;
+          transition: 0.3s ease;
 
           li {
+            transition: 0.3s ease;
             a {
               font-size: 1.3rem;
+              transition: 0.3s ease;
             }
           }
         }
@@ -551,10 +554,13 @@ a {
           flex-direction: column;
           align-items: self-start;
           gap: 1rem;
+          transition: 0.3s ease;
 
           li {
+            transition: 0.3s ease;
             a {
               font-size: 1.3rem;
+              transition: 0.3s ease;
             }
           }
         }
