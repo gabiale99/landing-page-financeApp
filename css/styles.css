@@ -493,3 +493,42 @@ a {
     }
   }
 }
+
+/* Hero móvil */
+
+@media screen and (max-width: 430px) {
+  .container-hero {
+    .hero {
+      width: 90%;
+      flex-direction: column;
+
+      .container-text-hero {
+        .container-svg-text {
+          width: 75%;
+        }
+      }
+
+      .container-datos-hero {
+        .container-title-datos {
+          gap: 5rem;
+        }
+
+        .container-meta {
+          top: -40px;
+          left: 185px;
+        }
+
+        .container-cifrado {
+          top: 450px;
+          left: -10px;
+        }
+      }
+    }
+
+    .container-grid-datos {
+      width: 90%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
