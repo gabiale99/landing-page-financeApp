@@ -1,0 +1,33 @@
+:root {
+  --background-primary: #f5f7f5;
+  --background-secondary: #ffffff;
+
+  --color-text-primary: #111814;
+  --color-text-secondary: #82a18d;
+
+  --color-primary: #13ec5b;
+  --color-primary-light: #e6fced;
+
+  --border: #e0e8e2;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
