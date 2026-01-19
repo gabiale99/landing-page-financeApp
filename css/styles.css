@@ -1006,3 +1006,26 @@ span {
     }
   }
 }
+
+/* Sección 1 móvil */
+
+@media screen and (max-width: 430px) {
+  .seccion-1 {
+    .container-seccion-1 {
+      width: 90%;
+
+      .container-grid-card-caracteristicas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .container-construir {
+        padding: 3rem 0;
+
+        h3 {
+          text-wrap: balance;
+        }
+      }
+    }
+  }
+}
