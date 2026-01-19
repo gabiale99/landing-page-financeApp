@@ -1369,3 +1369,27 @@ span {
     }
   }
 }
+
+/* Sección 3 móvil */
+
+@media screen and (max-width: 430px) {
+  .seccion-3 {
+    .container-seccion-3 {
+      width: 90%;
+
+      form {
+        h3 {
+          text-wrap: balance;
+        }
+
+        p {
+          text-wrap: balance;
+        }
+
+        .container-input-button {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
