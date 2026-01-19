@@ -732,7 +732,7 @@ span {
 
 /* Hero y nav móvil xxs */
 
-@media screen and (max-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .container-hero {
     .hero {
       .container-text-hero {
@@ -764,7 +764,7 @@ span {
 
 /* Hero y nav móvil xs */
 
-@media screen and (max-width: 376px) and (max-width: 429px) {
+@media screen and (min-width: 376px) and (max-width: 429px) {
   .container-hero {
     .hero {
       .container-text-hero {
@@ -1030,6 +1030,35 @@ span {
   }
 }
 
+/* Sección 1 móvil xxs */
+
+@media screen and (min-width: 320px) and (max-width: 429px) {
+  .seccion-1 {
+    .container-seccion-1 {
+      .container-construir {
+        padding: 3rem 1rem;
+
+        .container-buttons-construir {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+/* Sección 1 tablet xs */
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  .seccion-1 {
+    .container-seccion-1 {
+      .container-grid-card-caracteristicas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
 /* Sección 2 */
 
 .seccion-2 {
@@ -1165,6 +1194,61 @@ span {
             color: var(--color-primary);
           }
         }
+      }
+    }
+  }
+}
+
+/* Sección 2 móvil */
+
+@media screen and (max-width: 430px) {
+  .seccion-2 {
+    .container-seccion-2 {
+      width: 90%;
+
+      .container-title-comunidad {
+        h3 {
+          text-wrap: balance;
+        }
+      }
+
+      .container-grid-comunidad {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .container-title-industria {
+        .linea {
+          display: none;
+        }
+
+        p {
+          text-align: center;
+          text-wrap: wrap;
+        }
+      }
+
+      .container-grid-lideres {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+      }
+    }
+  }
+}
+
+/* Sección 1 tablet xs */
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  .seccion-2 {
+    .container-seccion-2 {
+      .container-grid-comunidad {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .container-grid-lideres {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
       }
     }
   }
