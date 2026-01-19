@@ -31,7 +31,8 @@ h6 {
 }
 
 p,
-a {
+a,
+span {
   font-family: "Roboto", sans-serif;
 }
 
@@ -594,8 +595,9 @@ a {
         color: var(--color-primary);
       }
 
-      h3 {
+      h4 {
         color: var(--color-text-primary);
+        font-size: 1.2rem;
       }
 
       p {
@@ -790,7 +792,7 @@ a {
   }
 }
 
-/* Hero y nav teblat */
+/* Hero y nav tablet */
 
 @media screen and (min-width: 431px) and (max-width: 1366px) {
   .container-hero {
@@ -817,7 +819,7 @@ a {
   }
 }
 
-/* Hero y nav teblat xs */
+/* Hero y nav tablet xs */
 
 @media screen and (min-width: 431px) and (max-width: 768px) {
   .container-hero {
@@ -831,6 +833,174 @@ a {
         .container-cifrado {
           top: 450px;
           left: -15px;
+        }
+      }
+    }
+  }
+}
+
+/* Sección 1 */
+
+.seccion-1 {
+  background-color: var(--background-primary);
+  padding: 4rem 0;
+
+  .container-seccion-1 {
+    width: 80%;
+    margin: auto;
+
+    .container-title-subtile {
+      text-align: center;
+
+      span {
+        background-color: #c9f5d7;
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        color: #51b071;
+      }
+
+      h3 {
+        font-size: 3rem;
+        padding: 1rem 0;
+        color: var(--color-text-primary);
+      }
+
+      p {
+        color: var(--color-text-secondary);
+      }
+    }
+
+    .container-grid-card-caracteristicas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      gap: 2rem;
+      padding: 2rem 0;
+
+      .card-caracteristicas {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        background-color: var(--background-secondary);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 5px 15px -4px var(--shadow-2);
+        transition: 0.3s ease-in-out;
+
+        svg {
+          color: var(--color-primary);
+        }
+
+        .svg-card {
+          width: 2.5rem;
+          height: 2.5rem;
+          padding: 0.6rem;
+          background-color: var(--color-primary-light);
+          border-radius: 10px;
+        }
+
+        h4 {
+          color: var(--color-text-primary);
+        }
+
+        p {
+          color: var(--color-text-secondary);
+        }
+
+        .contaier-link-ver {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          text-decoration: none;
+          color: var(--color-primary);
+          transition: 0.3s ease-in-out;
+
+          svg {
+            transition: 0.3s ease-in-out;
+          }
+
+          &:hover {
+            text-decoration: underline;
+
+            svg {
+              transform: translateX(5px);
+            }
+          }
+        }
+
+        &:hover {
+          border: 1px solid var(--color-primary);
+          box-shadow: 0 5px 15px -4px var(--shadow);
+        }
+      }
+    }
+
+    .container-construir {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      background-color: #0f2416;
+      text-align: center;
+      padding: 6rem 0;
+      border-radius: 20px;
+      margin-top: 4rem;
+
+      h3 {
+        font-size: 2.5rem;
+        color: var(--background-secondary);
+      }
+
+      p {
+        color: #727c82;
+      }
+
+      .container-buttons-construir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+          text-decoration: none;
+          padding: 0.6rem 1rem;
+        }
+
+        .button-cuenta {
+          background-color: var(--color-primary);
+          color: var(--color-text-primary);
+          border: 1px solid var(--color-primary);
+          border-radius: 10px;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            background-color: var(--color-primary-light);
+            color: var(--color-primary);
+          }
+        }
+
+        .button-venta {
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          color: var(--background-secondary);
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-text-primary);
+          }
         }
       }
     }
