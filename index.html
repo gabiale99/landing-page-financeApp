@@ -890,7 +890,11 @@
                     />
                     <path d="M3 7l9 6l9 -6" />
                   </svg>
-                  <input type="email" placeholder="contacto@ejemplo.com" />
+                  <input
+                    type="text"
+                    placeholder="contacto@ejemplo.com"
+                    id="email"
+                  />
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -903,13 +907,14 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="icon svg-check-off icon-tabler icons-tabler-outline icon-tabler-circle-check"
+                  id="svg-check"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                   <path d="M9 12l2 2l4 -4" />
                 </svg>
               </div>
-              <p class="error-close">Email invalido</p>
+              <p class="error-close" id="textError">Email invalido</p>
               <button type="submit">Unirse a la lista</button>
               <div class="container-svg-p">
                 <p>

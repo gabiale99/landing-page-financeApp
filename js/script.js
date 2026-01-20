@@ -20,3 +20,39 @@ btnMenu.addEventListener("click", () => {
     register.classList.remove("container-register-close");
   }
 });
+
+const formulario = document.querySelector("form");
+const inputEmail = document.querySelector("#email");
+const textoDeError = document.querySelector("#textError");
+const svgCheck = document.querySelector("#svg-check");
+
+inputEmail.addEventListener("focus", () => {
+  if (inputEmail.value.includes("@")) {
+    svgCheck.classList.add("svg-check");
+    svgCheck.classList.remove("svg-check-off");
+  } else {
+    svgCheck.classList.remove("svg-check");
+    svgCheck.classList.add("svg-check-off");
+  }
+});
+
+formulario.addEventListener("submit", (e) => {
+  let formularioValido = true;
+
+  if (
+    inputEmail.value == "" ||
+    !inputEmail.value.includes("@") ||
+    !inputEmail.value.includes(".com")
+  ) {
+    textoDeError.classList.remove("error-close");
+    textoDeError.classList.add("error");
+    formularioValido = false;
+  } else {
+    textoDeError.classList.add("error-close");
+    textoDeError.classList.remove("error");
+  }
+
+  if (!formularioValido) {
+    e.preventDefault();
+  }
+});
